@@ -1,0 +1,21 @@
+﻿@model List<CarInsurance.Models.Applicant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Applicants</h2>
+
+<!--Lists all of the applicant's; if one is clicked on, pulls up their info on the Details page-->
+@{
+    foreach (var applicant in Model)
+    {
+        <h2>
+            <a href="/applicants/details/@applicant.Id">
+                @applicant.FirstName @applicant.LastName
+            </a>
+        </h2>
+    }
+}
+
+<a href="/applicants/add">Add</a>

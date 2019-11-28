@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    143 Cheap Way<br />
+    Thievesville, California<br />
+    <abbr title="Phone">P:</abbr>
+    1-800-389-2281
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+<!--Lists all of the applicant's; if one is clicked on, pulls up their info on the Details page-->
+@{
+    foreach (var applicant in )
+    {
+        <h2>
+            @applicant.FirstName @applicant.LastName
+        </h2>
+    }
+}

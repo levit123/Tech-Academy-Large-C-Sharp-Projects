@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+<form submit="/Add" method="post">
+    <p>First Name</p>
+    <input name="firstName" />
+
+    <p>Last Name</p>
+    <input name="lastName" />
+
+    <p>Email</p>
+    <input name="email" />
+
+    <p>Date Of Birth (Example: 10/08/1990)</p>
+    <input name="dateOfBirth" />
+
+    <p>Car Year</p>
+    <input name="carYear" />
+
+    <p>Car Make</p>
+    <input name="carMake" />
+
+    <p>Car Model</p>
+    <input name="carModel" />
+
+    <p>Do you have a DUI? Enter "true" or "false"</p>
+    <input name="dui" />
+
+    <p>How many tickets do you have?</p>
+    <input name="tickets" />
+
+    <p>Do you want coverage? Enter "true" or "false"</p>
+    <input name="coverage" />
+
+    <button type="submit">Add Applicant</button>
+</form>

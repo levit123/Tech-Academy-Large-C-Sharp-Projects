@@ -1,0 +1,31 @@
+﻿@model CarInsurance.Models.Applicant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+First Name: @Model.FirstName
+<br />
+Last Name: @Model.LastName
+<br />
+Email: @Model.Email
+<br />
+Date Of Birth: @Model.DateOfBirth
+<br />
+Car Year: @Model.CarYear
+<br />
+Car Make: @Model.CarMake
+<br />
+Car Model: @Model.CarModel
+<br />
+DUI: @Model.DUI
+<br />
+Tickets: @Model.Tickets
+<br />
+Coverage: @Model.Coverage
+<br />
+Quote: @Model.Quote
+<br />
+<a href="../edit/@Model.Id">Edit</a>

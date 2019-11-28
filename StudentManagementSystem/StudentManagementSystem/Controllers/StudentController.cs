@@ -58,7 +58,6 @@ namespace StudentManagementSystem.Controllers
                 command.Parameters["@LastName"].Value = student.LastName;
 
                 connection.Open();
-                /*NOTE FOR INSTRUCTOR: error is thrown here, and says that the "Id" property cannot be NULL*/
                 command.ExecuteNonQuery();
 
                 connection.Close();
